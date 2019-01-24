@@ -1,6 +1,7 @@
 <?php
-require_once ('../lib/func.php');
 session_start();
+require_once ('../lib/func.php');
+
 $username=checkAuth();
 if ( $username == false){
     showLoginForm();
@@ -13,5 +14,4 @@ if ( $username == false){
 }
 
 ?>
-<script type="text/javascript">
-    <
+
