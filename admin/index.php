@@ -4,13 +4,16 @@ require_once ('../lib/func.php');
 
 $username=checkAuth();
 if ( $username == false){
-    showLoginForm();
+    //showLoginForm();
+    include_once ('./view/login.php');
     logIn();
-    echo 'FALSE';
+    //echo 'FALSE';
 }else{
-    echo 'TRUE';
+    /*echo 'TRUE';
     echo $username;
-    echo '<a  href="/admin/logout.php">exit</a>';
+    echo '<a  href="/admin/logout.php">exit</a>';*/
+    include_once ('./view/blank.php');
+
 }
 
 ?>
